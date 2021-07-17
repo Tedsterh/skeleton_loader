@@ -5,6 +5,7 @@ import 'package:shimmer/shimmer.dart';
 
 part 'src/skeleton_list.dart';
 part 'src/skeleton_grid.dart';
+part 'src/skeleton_child.dart';
 
 enum SkeletonDirection { ltr, rtl, ttb, btt }
 
