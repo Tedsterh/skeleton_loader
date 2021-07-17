@@ -1,6 +1,6 @@
 part of skeleton_loader;
 
-class SkeletonLoader extends StatefulWidget {
+class SkeletonChild extends StatefulWidget {
   /// Number of skeleton items to show
   /// Default is 1
   final int items;
@@ -24,7 +24,7 @@ class SkeletonLoader extends StatefulWidget {
   /// Defaults to Duration(seconds: 2)
   final Duration period;
 
-  const SkeletonLoader({
+  const SkeletonChild({
     Key? key,
     this.items = 1,
     required this.builder,
@@ -35,10 +35,10 @@ class SkeletonLoader extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _SkeletonLoaderState createState() => _SkeletonLoaderState();
+  _SkeletonChildState createState() => _SkeletonChildState();
 }
 
-class _SkeletonLoaderState extends State<SkeletonLoader> {
+class _SkeletonChildState extends State<SkeletonChild> {
   @override
   Widget build(BuildContext context) {
     ShimmerDirection direction = getDirection(widget.direction);
